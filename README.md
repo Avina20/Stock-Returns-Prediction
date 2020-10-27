@@ -12,6 +12,8 @@ The model is divided into three parts:
 2.	Stock returns prediction
 3.	Directional classification
 
+
+
 ## Conclusion
 We created three different models for predicting stock returns. Firstly, to predict future stock prices from past stick prices using LSTM, which worked well for single step forecast but it did not predict well for multi step forecast. It only copied the same values again and again. Second to predict stock returns with almost similar results as previous, and we also could not decrease loss much. Lastly to predict the direction of stocks(up/down) using binary classification on all the data. Even with these many data, the model still couldn’t perform any better than a random guessing. Hence there is no hope in the working of first two models as well.  If the model can’t even predict the up or down of the stocks, which is actually easier, then it definitely cannot predict the numerical values of the future stock prices or the returns from the future stocks. So it is impossible to make an almost perfect stock price forecast model. The fundamental flaw in our approach is using previous data to predict future data without considering the real world events. The stock prices depend on lot of real world factors like sensex, mood of investor, image of company, and it would be wrong to assume that the future is deterministic given the historical stock price trends.
 
